@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/fm">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:id="@+id/gd"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20:35"
+            android:id="@+id/time"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_columnSpan="3"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fri, Jul 14 2016"
+            android:id="@+id/date"
+            android:layout_row="1"
+            android:gravity="center_horizontal"
+            android:layout_columnSpan="3"
+            android:layout_column="0" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:id="@+id/imageView"
+            android:layout_columnSpan="3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#89ffffff" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/weather_image"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowSpan="1"
+            android:background="@android:drawable/ic_input_add"
+            android:layout_gravity="center"
+            android:src="@drawable/art_light_clouds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="25"
+            android:id="@+id/temp_high"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowSpan="1"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="23"
+            android:id="@+id/temp_low"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowSpan="1"
+            android:layout_gravity="center" />
+
+
+    </GridLayout>
+</FrameLayout>
